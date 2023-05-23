@@ -11,22 +11,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+header{
+    flex-shrink: 0;
+    padding: 60px;
+    width: 30vw;
+}
+
 .container{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--dark-gray);
-    background-color: #EAEDF0;
-    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: #fce399;
 
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-}
-
-header{
-    flex-shrink: 0;
-    padding: 30px;
-    width: 30vw;
 }
 
 .body{
@@ -38,48 +37,93 @@ header{
     border-bottom-left-radius: var(--radius);
 }
 
-form{
-    width: 50vw;
+.body h1{
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+/*Joy or Concern Button*/
+
+#jc{
+    position: relative;
 }
 
 input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
-    width: 44px;
-    height: 24px;
+    width: 60px;
+    height: 26px;
     border-radius: 12px;
-    border: 2px solid black;
-    background: #eee;
+    border: 1px solid var(--dark-gray);
+    background: var(--gray);
     transition: all 0.4s;
 }
 
-.form-row {
-    margin-bottom: 40px;
+label[for="jc"] {
+    align-items: center;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  
+    gap: 10px;
+}
 
 input[type="checkbox"]::before {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     border-radius: 9px;
-    background-color: black;
+    background-color: var(--dark-gray);
     content: '';
     position: absolute;
-    top: 7px;
-    left: 16%;
+    top: 4px;
+    left: 10%;
     transition: all 0.4s;
   }
 
   input[type="checkbox"]:checked {
-    background-color: #ffaa00;
+    background-color: #cacaca;
     transition: all 0.4s;
   }
 
   input[type="checkbox"]:checked::before {
-    left: 35%;
+    left: 60%;
     transition: all 0.4s;
   }
+
+/*Form */
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    width: 40%;
+}
+
+.form-row > legend {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.form-textarea {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    width: calc(80% + 20px);
+}
+
+input[type="textarea"] {
+    height: auto;
+}
+
+
+
+

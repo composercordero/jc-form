@@ -16,19 +16,29 @@
 </header>
 
 <div class="body">
+    <div class="title">
+    <h1 class="main-question">Come and share with us</h1>
+    <p class="text">Click on the button below to select joy or concern.</p>
+    <p class="text">No matter what you are sharing today with us, we are here for you.</p>
+    </div>
 
-    <h1 class="main-question">What would you like to share today?</h1>
-    <label for="jc">
-        <span class="joy">Joy</span>
-    <input type="checkbox" id="jc" name="jc" class="jc">
-        <span class="concern">Concern</span>
-    </label>
+    <div class="form-row" id="jc">
+        <label for="jc">
+            <span class="joy">Joy</span>
+        <input type="checkbox" id="jc" name="jc" class="jc">
+            <span class="concern">Concern</span>
+        </label>
+    </div>
 
     <form action="" method="get">
+    <div class="form">
 
         <div class="form-row">
             <label for="first-name">First Name: </label>
             <input type="text" name="first-name" id="first-name">
+        </div>
+
+        <div class="form-row">
             <label for="last-name">Last Name: </label>
             <input type="text" name="last-name" id="last-name">
         </div>
@@ -39,12 +49,12 @@
         </div>
 
         <div class="form-row">
-            <label for="feelings">How are you feeling today: </label>
-            <legend>Select a number from 1 to 10, 1 being low energy.</legend>
+            <label for="feelings">How are you feeling today*</label>
             <select name="feelings" id="feelings" class="feelings"></select>
+            <legend>Select a number from 1 to 10, 1 being low energy.</legend>
         </div>
 
-        <div class="form-row">
+        <div class="form-textarea">
             <label for="textarea">What would you like to share with us today?</label>
             <input type="textarea" name="textarea" id="textarea" required>
         </div>
@@ -53,9 +63,11 @@
             <label for="captcha">Write the following numbers below: </label>
             <input type="number" name="captcha" id="captcha" required>
         </div>
-
+        
+        <div class="form-row">
         <button type="submit">Share your joy with us</button>
-
+        </div>
+    </div>
     </form>
 </div>
 
