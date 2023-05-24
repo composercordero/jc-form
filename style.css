@@ -1,7 +1,7 @@
 :root{
     --gray: #eaeaea ;
     --dark-gray:#262626;
-    --radius: 25px;
+    --radius: 5px;
 }
 
 *{
@@ -14,7 +14,14 @@
 header{
     flex-shrink: 0;
     padding: 60px;
-    width: 30vw;
+    width: 40vw;
+}
+
+.image, .image a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--dark-gray);
 }
 
 .container{
@@ -30,7 +37,7 @@ header{
 
 .body{
     flex: 1;
-    width: 70vw;
+    width: 60vw;
     padding: 60px;
     background-color: white;
     border-top-left-radius: var(--radius);
@@ -107,6 +114,13 @@ input[type="checkbox"]::before {
     width: 40%;
 }
 
+input, select{
+    border-radius: var(--radius);
+    border: 1px solid var(--dark-gray);
+    padding-left: 10px;
+    appearance: none;
+}
+
 .form-row > legend {
     font-size: 0.8rem;
     margin-top: 5px;
@@ -124,6 +138,15 @@ input[type="textarea"] {
     height: auto;
 }
 
+button{
+    padding: 10px;
+}
 
+.valid{
+    background-color: rgb(234, 255, 223);
+}
 
+.invalid{
+    background-color: rgb(255, 223, 223);
+}
 
